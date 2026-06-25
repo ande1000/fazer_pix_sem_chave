@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Fazer Pix</h1>
+    <h2>Fazer Pix para Anderson</h2>
+    
+    <label for="amount">Valor (R$):</label>
+    <input type="text" id="amount" placeholder="0.00">
+    
+    <button id="generate-btn">Gerar QR Code</button>
+    
+    <div id="qr-code-display"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

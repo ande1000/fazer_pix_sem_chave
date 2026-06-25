@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
-sdk = mercadopago.SDK("APP_USR-5736314269671526-062323-4c8cc89d1112ac6799a6d3")
+sdk = mercadopago.SDK("APP_USR-5736314269671526-062323-4c8cc89d1112ac6799a6d37e85009840-750814888")
 
 @app.route('/')
 def index():
